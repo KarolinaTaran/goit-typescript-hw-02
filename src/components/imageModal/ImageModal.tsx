@@ -25,7 +25,6 @@ const ImageModal: React.FC<ImageModalProps> = ({
       className={css.modalWrapper}
       onRequestClose={closeModal}
       isOpen={isOpen}
-      onClose={closeModal}
       shouldCloseOnOverlayClick={true}
       contentLabel="Image Modal"
     >
