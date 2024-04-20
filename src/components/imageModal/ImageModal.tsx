@@ -1,7 +1,17 @@
 import ReactModal from "react-modal";
 import css from "./ImageModal.module.css";
 
-const ImageModal = ({ isOpen, imgUrl, closeModal }) => {
+interface ImageModalProps {
+  isOpen: boolean;
+  imgUrl: string;
+  closeModal: () => void;
+}
+
+const ImageModal: React.FC<ImageModalProps> = ({
+  isOpen,
+  imgUrl,
+  closeModal,
+}) => {
   const customStyles = {
     content: {
       width: "fit-content",
